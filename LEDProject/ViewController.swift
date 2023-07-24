@@ -17,6 +17,17 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func colorButtonTapped(_ sender: UIButton) {
+        let colorList: [UIColor] = [.blue, .blue, .yellow, .brown, .gray, .green, .systemPink]
+        
+        guard let randomColor = colorList.randomElement() else {
+            print("COLOR ERROR")
+            return
+        }
+        
+        resultLabel.textColor = randomColor
+    }
+    
     @IBAction func sendButtonTapped(_ sender: UIButton) {
         resultLabel.text = inputTextField.text
     }

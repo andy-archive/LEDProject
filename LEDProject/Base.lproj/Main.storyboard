@@ -63,6 +63,9 @@
                                                 <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Aa"/>
+                                                <connections>
+                                                    <action selector="colorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6sf-yg-d9V"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
