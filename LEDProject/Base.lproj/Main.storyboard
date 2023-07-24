@@ -37,6 +37,9 @@
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="endEditTextField:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="cHT-iN-2xC"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyh-N6-VME">
                                                 <rect key="frame" x="521.66666666666663" y="0.0" width="71" height="40"/>
@@ -75,6 +78,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="DoY-GH-kjm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="16:9" id="6cb-RB-W7N"/>
                             <constraint firstItem="HKV-yc-irh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9g8-Zk-jEz"/>
@@ -83,9 +87,20 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HKV-yc-irh" secondAttribute="trailing" constant="20" id="LQd-kB-08Y"/>
                             <constraint firstItem="DoY-GH-kjm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aah-Td-W02"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Jnt-GS-V68" appends="YES" id="1lL-WX-aZd"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="lK7-BD-eKK" id="4gb-il-NBZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Jnt-GS-V68">
+                    <connections>
+                        <action selector="tapGestureTapped:" destination="BYZ-38-t0r" id="fao-uQ-XN1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.32394366197184" y="3.8167938931297707"/>
         </scene>

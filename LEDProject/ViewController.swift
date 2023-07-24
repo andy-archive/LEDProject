@@ -9,11 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var inputTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func endEditTextField(_ sender: UITextField) {
+    }
+    
+    @IBAction func tapGestureTapped(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
 }
 
