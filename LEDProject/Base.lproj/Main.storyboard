@@ -98,8 +98,9 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="inputTextField" destination="lK7-BD-eKK" id="4gb-il-NBZ"/>
+                        <outlet property="inputTextField" destination="lK7-BD-eKK" id="T1V-2m-GbO"/>
                         <outlet property="resultLabel" destination="DoY-GH-kjm" id="AY6-3e-dQ0"/>
+                        <outlet property="searchBarView" destination="HKV-yc-irh" id="aff-BB-9Qh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

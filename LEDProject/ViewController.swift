@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var searchBarView: UIView!
     @IBOutlet var inputTextField: UITextField!
     @IBOutlet var resultLabel: UILabel!
     
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
     
     @IBAction func tapGestureTapped(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
+        searchBarView.isHidden.toggle()
     }
 }
 
