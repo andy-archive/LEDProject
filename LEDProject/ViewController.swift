@@ -10,9 +10,15 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var inputTextField: UITextField!
+    @IBOutlet var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    @IBAction func sendButtonTapped(_ sender: UIButton) {
+        resultLabel.text = inputTextField.text
     }
     
     @IBAction func endEditTextField(_ sender: UITextField) {

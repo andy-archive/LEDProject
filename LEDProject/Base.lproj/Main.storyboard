@@ -50,6 +50,9 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="보내기"/>
+                                                <connections>
+                                                    <action selector="sendButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xc3-vK-viV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5J-WM-Vb7">
                                                 <rect key="frame" x="608.66666666666663" y="0.0" width="53.333333333333371" height="40"/>
@@ -93,6 +96,7 @@
                     </view>
                     <connections>
                         <outlet property="inputTextField" destination="lK7-BD-eKK" id="4gb-il-NBZ"/>
+                        <outlet property="resultLabel" destination="DoY-GH-kjm" id="AY6-3e-dQ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
